@@ -35,10 +35,9 @@ select * from table
 select id, avg(value)
 from table
 group by id 
-
+```
 Результат: 
 
-```
 
 | id | avg    |
 |----|--------|
