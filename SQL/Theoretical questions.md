@@ -119,7 +119,7 @@ from table
 2) DENSE_RANK - Для повторяющихся значений выставляет повторяющийся ранг. Необходимо указать order by или для всех строк проставит 1 
 
 ```sql
-select id, value, DENSE_RANK() over(order by value)
+select id, value, DENSE_RANK() over(order by value desc)
 from table
 ```
 
@@ -138,7 +138,7 @@ from table
 
 
 ```sql
-select id, value, DENSE_RANK() over(order by value)
+select id, value, DENSE_RANK() over(order by value desc)
 from table
 ```
 
